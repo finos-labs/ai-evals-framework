@@ -1,5 +1,4 @@
 ![badge-labs](https://user-images.githubusercontent.com/327285/230928932-7c75f8ed-e57b-41db-9fb7-a292a13a1e58.svg)
-
 # AI Evaluation and Benchmarking Framework
 
 A FINOS Labs initiative for building a taxonomy, datasets, and tooling for evaluating AI systems in financial services.
@@ -37,6 +36,9 @@ The initiative follows a staged approach:
 
 🌍 Expand shared taxonomy across industry (Q2 2026)
 
+Each milestone listed in the image below is linked to a github issue
+
+![202509 - FINOS AI Evals](https://github.com/user-attachments/assets/94f3e390-655f-432c-bf27-3fbade4fb35d)
 
 ## License
 
