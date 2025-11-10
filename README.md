@@ -36,6 +36,8 @@ The initiative follows a staged approach:
 
 🌍 Expand shared taxonomy across industry (Q2 2026)
 
+## Milestones
+
 Each milestone listed in the image below is linked to a github issue
 
 ![202509 - FINOS AI Evals](https://github.com/user-attachments/assets/94f3e390-655f-432c-bf27-3fbade4fb35d)
