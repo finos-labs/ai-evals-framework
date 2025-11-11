@@ -1,6 +1,6 @@
 name: "Financial Agent Use Case"
 description: "Propose a new use case for the AI Evals Framework to prioritize and define evaluation strategies for."
-title: "[Use Case]: <A brief name for the financial agent>"
+title: " Use Case: <A brief name for the financial agent>"
 labels: ["use-case"]
 body:
   - type: markdown
@@ -8,7 +8,7 @@ body:
       value: |
         Thank you for contributing a new use case! 
         
-        [cite_start]This project aims to anchor AI evaluations in concrete financial use cases, following a **Use Case → Risks → Metrics** taxonomy[cite: 862, 930]. Please provide as much detail as possible to help the community understand the agent, its value, and the unique challenges in evaluating it.
+        This project aims to anchor AI evaluations in concrete financial use cases, following a **Use Case → Risks → Metrics** taxonomy. Please provide as much detail as possible to help the community understand the agent, its value, and the unique challenges in evaluating it.
   
   - type: textarea
     id: use-case-description
@@ -16,7 +16,7 @@ body:
       label: "Use Case Description"
       description: "Describe the financial agent use case. What problem does it solve? Who is the end-user (e.g., risk analyst, trader, retail customer)? What are the agent's key functions?"
       placeholder: |
-        [cite_start]e.g., "An agent that performs credit risk analysis for small business loan applications. It reads financial statements (PDFs), market data, and internal policies to produce a risk rating (1-5) and a written summary justifying its decision." [cite: 1092]
+        e.g., "An agent that performs credit risk analysis for small business loan applications. It reads financial statements (PDFs), market data, and internal policies to produce a risk rating (1-5) and a written summary justifying its decision." 
     validations:
       required: true
 
@@ -36,7 +36,7 @@ body:
         ---
         ### 🎯 Key Evaluation Challenges
         
-        Help us understand the *specific* evaluation challenges. [cite_start]The project focuses on "system-level" evaluation, not just the model[cite: 1041].
+        Help us understand the *specific* evaluation challenges. The project focuses on "system-level" evaluation, not just the model.
 
   - type: textarea
     id: eval-risks
@@ -70,18 +70,17 @@ body:
     id: agent-components
     attributes:
       label: "Envisioned Agent Components (System-Level)"
-      [cite_start]description: "What components would this *whole agent* likely use? This helps us scope the 'system' to be evaluated." [cite: 1041]
+      description: "What components would this *whole agent* likely use? This helps us scope the 'system' to be evaluated."
       options:
-        - [cite_start]label: "Large Language Model (LLM) (e.g., OpenAI, Anthropic, open models)" [cite: 226, 385, 1014]
-        - [cite_start]label: "Vector DB (e.g., Pinecone, Weaviate, Milvus)" [cite: 226, 385, 1015]
-        - [cite_start]label: "RAG (Retrieval-Augmented Generation) Pipeline" [cite: 964, 996]
-        - [cite_start]label: "Agentic Framework (e.g., LangChain, LlamaIndex, crewAI)" [cite: 507, 508, 512, 513]
+        - label: "Large Language Model (LLM) (e.g., OpenAI, Anthropic, open models)" 
+        - label: "Vector DB (e.g., Pinecone, Weaviate, Milvus)" 
+        - label: "RAG (Retrieval-Augmented Generation) Pipeline" 
+        - label: "Agentic Framework (e.g., LangChain, LlamaIndex, crewAI)" 
         - label: "Access to external tools/APIs (e.g., web search, market data feeds)"
-        - [cite_start]label: "Durable Execution (e.g., Temporal)" [cite: 511]
+        - label: "Durable Execution (e.g., Temporal)" 
 
   - type: textarea
     id: context
     attributes:
       label: "Additional Context & Datasets"
-      [cite_start]description: "Any other information? Please add links to related research, potential open datasets (like the CDM synthetic data [cite: 468][cite_start]), or relevant regulations (e.g., EU AI Act, SR 11-7)[cite: 300, 306]."
-      placeholder: "e.g., This use case is particularly relevant for SEC/FINRA compliance. We might be able to use the Enron email dataset for initial testing..."
+      description: "Any other information? Please add links to related research, potential open datasets (like the CDM synthetic data), or relevant regulations (e.g., EU AI Act, SR 11-7)."
