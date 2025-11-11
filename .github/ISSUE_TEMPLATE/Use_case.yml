@@ -1,0 +1,86 @@
+name: "Financial Agent Use Case"
+description: "Propose a new use case for the AI Evals Framework to prioritize and define evaluation strategies for."
+title: " Use Case: <A brief name for the financial agent>"
+labels: ["use-case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing a new use case! 
+        
+        This project aims to anchor AI evaluations in concrete financial use cases, following a **Use Case → Risks → Metrics** taxonomy. Please provide as much detail as possible to help the community understand the agent, its value, and the unique challenges in evaluating it.
+  
+  - type: textarea
+    id: use-case-description
+    attributes:
+      label: "Use Case Description"
+      description: "Describe the financial agent use case. What problem does it solve? Who is the end-user (e.g., risk analyst, trader, retail customer)? What are the agent's key functions?"
+      placeholder: |
+        e.g., "An agent that performs credit risk analysis for small business loan applications. It reads financial statements (PDFs), market data, and internal policies to produce a risk rating (1-5) and a written summary justifying its decision." 
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance
+    attributes:
+      label: "Relevance & Business Value"
+      description: "Why is this use case important for the financial services industry? What is the 'Value' it provides (e.g., reduces compliance risk, improves operational efficiency, new capability)?"
+      placeholder: |
+        e.g., "This automates a manually intensive process, reducing loan approval times from days to hours. It helps standardize risk assessment across the organization, reducing human bias and ensuring alignment with internal policy."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 🎯 Key Evaluation Challenges
+        
+        Help us understand the *specific* evaluation challenges. The project focuses on "system-level" evaluation, not just the model.
+
+  - type: textarea
+    id: eval-risks
+    attributes:
+      label: "1. Key Risks"
+      description: "What are the primary risks if this agent fails or behaves unexpectedly in production? Think about robustness, fairness, security, and accuracy."
+      placeholder: |
+        e.g., 
+        - **Hallucination/Accuracy:** The agent might "hallucinate" figures not present in the financial statements, leading to an incorrect risk rating.
+        - **Robustness:** It might fail to parse non-standard PDF formats or misinterpret complex table structures.
+        - **Fairness/Bias:** The agent could develop a bias against certain industries or regions based on the policy language.
+        - **Security:** The agent might be susceptible to prompt injection if it processes external data.
+    validations:
+      required: true
+
+  - type: textarea
+    id: eval-metrics
+    attributes:
+      label: "2. Proposed Evaluation Metrics/Methods"
+      description: "How could we measure or test for these risks? What would define a 'good' or 'safe' agent in this context?"
+      placeholder: |
+        e.g., 
+        - **Metric:** Factual consistency score against source documents.
+        - **Metric:** Accuracy of final risk rating against a 'golden set' of human-adjudicated applications.
+        - **Method:** Run agent on a benchmark of "adversarial" documents (e.g., blurred scans, unusual layouts, trick questions) to test robustness.
+        - **Method:** Test for bias using a synthetic dataset with protected attributes.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agent-components
+    attributes:
+      label: "Envisioned Agent Components (System-Level)"
+      description: "What components would this *whole agent* likely use? This helps us scope the 'system' to be evaluated."
+      options:
+        - label: "Large Language Model (LLM) (e.g., OpenAI, Anthropic, open models)" 
+        - label: "Vector DB (e.g., Pinecone, Weaviate, Milvus)" 
+        - label: "RAG (Retrieval-Augmented Generation) Pipeline" 
+        - label: "Agentic Framework (e.g., LangChain, LlamaIndex, crewAI)" 
+        - label: "Access to external tools/APIs (e.g., web search, market data feeds)"
+        - label: "Durable Execution (e.g., Temporal)" 
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Additional Context & Datasets"
+      description: "Any other information? Please add links to related research, potential open datasets (like the CDM synthetic data), or relevant regulations (e.g., EU AI Act, SR 11-7)."
