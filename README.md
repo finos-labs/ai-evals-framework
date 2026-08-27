@@ -79,7 +79,7 @@ Each milestone in the diagram below is tracked as a GitHub issue in this reposit
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [FINOS Community Code of Conduct](CODE_OF_CONDUCT.md). Use the [Financial Agent Use Case](https://github.com/finos-labs/ai-evals-framework/issues/new?template=Use_case.yml) template for new evaluation scenarios; use the other issue templates for bugs, features, and support questions.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
