@@ -77,9 +77,17 @@ Each milestone in the diagram below is tracked as a GitHub issue in this reposit
 
 ![202509 - FINOS AI Evals](https://github.com/user-attachments/assets/94f3e390-655f-432c-bf27-3fbade4fb35d)
 
+## Get Involved
+
+Join the AI Evaluation Framework general mailing list by sending an email to ai-evals-framework+subscribe@lists.finos.org.
+
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [FINOS Community Code of Conduct](CODE_OF_CONDUCT.md). Use the [Financial Agent Use Case](https://github.com/finos-labs/ai-evals-framework/issues/new?template=Use_case.yml) template for new evaluation scenarios; use the other issue templates for bugs, features, and support questions.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+All commits must include a `Signed-off-by` line so they 
+satisfy the [Developer Certificate of Origin (DCO)](https://
+developercertificate.org/)
 
 ## License
 
