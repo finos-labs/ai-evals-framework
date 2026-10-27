@@ -54,6 +54,12 @@ For each financial use case, the framework aims to provide:
 
 Associated assets may include open datasets (for example CDM-oriented synthetic scenarios), patterns for observability-backed evaluation, and integration notes for open evaluators adapted to financial tasks.
 
+### Taxonomy, Milestone Specifications & Glass-Box Evaluator
+
+- **[`taxonomy/MILESTONE_DEFINITIONS.md`](taxonomy/MILESTONE_DEFINITIONS.md)** — Canonical scoping and architecture definitions for Milestones [`#4`](https://github.com/finos-labs/ai-evals-framework/issues/4) (`Use Case → Risk → Metric Taxonomy`), [`#8`](https://github.com/finos-labs/ai-evals-framework/issues/8) (`Metrics & Evaluation Guidelines`), [`#10`](https://github.com/finos-labs/ai-evals-framework/issues/10) (`Agentic System Evaluation`), [`#11`](https://github.com/finos-labs/ai-evals-framework/issues/11) (`RAG System Evaluation`), and [`#15`](https://github.com/finos-labs/ai-evals-framework/issues/15) (`Standardized Evaluation Pipeline & Cryptographic Evidence`), mapping open-standard **IETF SCITT (`RFC 9162`)** `COSE_Sign1` receipts and non-custodial institutional D-FMI verification.
+- **[`taxonomy/use_case_aigf_calm_metrics_taxonomy.json`](taxonomy/use_case_aigf_calm_metrics_taxonomy.json)** — Machine-readable `Use Cases → AIGF Risks & Mitigations → CALM Control Requirements → Quantitative Metrics` schema covering community Use Cases [`#20`](https://github.com/finos-labs/ai-evals-framework/issues/20), [`#21`](https://github.com/finos-labs/ai-evals-framework/issues/21), [`#22`](https://github.com/finos-labs/ai-evals-framework/issues/22), [`#23`](https://github.com/finos-labs/ai-evals-framework/issues/23), [`#24`](https://github.com/finos-labs/ai-evals-framework/issues/24), [`#26`](https://github.com/finos-labs/ai-evals-framework/issues/26), and [`#31`](https://github.com/finos-labs/ai-evals-framework/issues/31).
+- **[`evals/validate_evals_framework.py`](evals/validate_evals_framework.py)** — Zero-dependency deterministic validator and 12-scenario adversarial glass-box evaluation harness (`python3 evals/validate_evals_framework.py --self-test`).
+
 ## Roadmap
 
 High-level phases (see workshop summary in the PDF below and [milestones as GitHub issues](https://github.com/finos-labs/ai-evals-framework/issues)):
