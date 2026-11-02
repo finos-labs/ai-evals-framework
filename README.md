@@ -79,7 +79,10 @@ Each milestone in the diagram below is tracked as a GitHub issue in this reposit
 
 ## Get Involved
 
-Join the AI Evaluation Framework general mailing list by sending an email to ai-evals-framework+subscribe@lists.finos.org.
+We welcome community participation and contributions!
+
+* **Mailing List:** Join the AI Evaluation Framework community by emailing [ai-evals-framework+subscribe@lists.finos.org](mailto:ai-evals-framework+subscribe@lists.finos.org).
+* **Project Meetings:** [Register for the AI Evaluation Framework Project Meeting](https://zoom-lfx.platform.linuxfoundation.org/meeting/95777542144?password=2d510837-3202-45cc-bf02-b84028fcc64b&invite=true).
 
 ## Contributing
 
